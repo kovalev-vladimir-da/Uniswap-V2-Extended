@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity =0.6.6;
+pragma solidity ^0.8.24;
 
 import "./interfaces/IERC20.sol";
 
@@ -21,7 +21,7 @@ contract ERC20 is IERC20 {
     constructor(
         string memory _name,
         string memory _symbol
-    ) public {
+    ) {
         name = _name;
         symbol = _symbol;
     }

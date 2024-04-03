@@ -2,16 +2,17 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/UniswapV2ERC20.sol": {
-      "lastModificationDate": 1711561244651,
-      "contentHash": "6fcc60b064c8b9d7d45377e379697866",
+      "lastModificationDate": 1712166411833,
+      "contentHash": "e90352652a929b2fbea8427b64431145",
       "sourceName": "contracts/UniswapV2ERC20.sol",
       "solcConfig": {
-        "version": "0.5.16",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -33,23 +34,24 @@
         "./libraries/SafeMath.sol"
       ],
       "versionPragmas": [
-        "=0.5.16"
+        "^0.8.24"
       ],
       "artifacts": [
         "UniswapV2ERC20"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/interfaces/IUniswapV2ERC20.sol": {
-      "lastModificationDate": 1711559109335,
-      "contentHash": "cda7b90685df9fae3bd3f81a4071cf8b",
+      "lastModificationDate": 1712166408678,
+      "contentHash": "8ec30c1bfdfffe4253f917c04002d366",
       "sourceName": "contracts/interfaces/IUniswapV2ERC20.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -68,23 +70,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">=0.5.0"
+        "^0.8.24"
       ],
       "artifacts": [
         "IUniswapV2ERC20"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/libraries/SafeMath.sol": {
-      "lastModificationDate": 1711561181337,
-      "contentHash": "951b139e456238938c3fc3dd9b6ba77e",
+      "lastModificationDate": 1712165460421,
+      "contentHash": "52f3646b9a1025cf1e8557f7e986291d",
       "sourceName": "contracts/libraries/SafeMath.sol",
       "solcConfig": {
-        "version": "0.5.16",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -103,23 +106,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        "=0.5.16"
+        "^0.8.24"
       ],
       "artifacts": [
         "SafeMath"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/UniswapV2Pair.sol": {
-      "lastModificationDate": 1711561164980,
-      "contentHash": "140dd56a4b204e4bde32d8813a8a71b2",
+      "lastModificationDate": 1712168910969,
+      "contentHash": "587995a3a30fd5995e102e114e3f10ee",
       "sourceName": "contracts/UniswapV2Pair.sol",
       "solcConfig": {
-        "version": "0.5.16",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -137,8 +141,8 @@
         }
       },
       "imports": [
-        "./interfaces/IUniswapV2Pair.sol",
         "./UniswapV2ERC20.sol",
+        "./libraries/SafeMath.sol",
         "./libraries/Math.sol",
         "./libraries/UQ112x112.sol",
         "./interfaces/IERC20.sol",
@@ -146,23 +150,24 @@
         "./interfaces/IUniswapV2Callee.sol"
       ],
       "versionPragmas": [
-        "=0.5.16"
+        "^0.8.24"
       ],
       "artifacts": [
         "UniswapV2Pair"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/libraries/Math.sol": {
-      "lastModificationDate": 1711558962531,
-      "contentHash": "cc49663d80b1cddefafa0535e0f79f8a",
+      "lastModificationDate": 1712165457040,
+      "contentHash": "1c6d0b9ed3e9f075d269114889e52843",
       "sourceName": "contracts/libraries/Math.sol",
       "solcConfig": {
-        "version": "0.5.16",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -181,23 +186,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        "=0.5.16"
+        "^0.8.24"
       ],
       "artifacts": [
         "Math"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/libraries/UQ112x112.sol": {
-      "lastModificationDate": 1711559052596,
-      "contentHash": "f7bea8c78e1272a6f52e6351e319d92c",
+      "lastModificationDate": 1712165493233,
+      "contentHash": "9bfe497d7025d868087faa144903ac2b",
       "sourceName": "contracts/libraries/UQ112x112.sol",
       "solcConfig": {
-        "version": "0.5.16",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -216,23 +222,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        "=0.5.16"
+        "^0.8.24"
       ],
       "artifacts": [
         "UQ112x112"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/interfaces/IUniswapV2Pair.sol": {
-      "lastModificationDate": 1711559172628,
-      "contentHash": "50ff7d7434f217eaba535e4455fd0338",
+      "lastModificationDate": 1712166407326,
+      "contentHash": "864dc62255af4f895f11dbf3680f86e4",
       "sourceName": "contracts/interfaces/IUniswapV2Pair.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -249,25 +256,28 @@
           }
         }
       },
-      "imports": [],
+      "imports": [
+        "./IUniswapV2ERC20.sol"
+      ],
       "versionPragmas": [
-        ">=0.5.0"
+        "^0.8.24"
       ],
       "artifacts": [
         "IUniswapV2Pair"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/interfaces/IERC20.sol": {
-      "lastModificationDate": 1711559042474,
-      "contentHash": "73f885766d724c9ddba1581e7f86b094",
+      "lastModificationDate": 1712165403984,
+      "contentHash": "411fe36403597e8323bbbb98b26b2acf",
       "sourceName": "contracts/interfaces/IERC20.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -286,23 +296,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">=0.5.0"
+        "^0.8.24"
       ],
       "artifacts": [
         "IERC20"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/interfaces/IUniswapV2Factory.sol": {
-      "lastModificationDate": 1711559492242,
-      "contentHash": "6c3c30cbb78686b2edac5848e4fc2596",
+      "lastModificationDate": 1712165416704,
+      "contentHash": "7dc050b841a3e73a0a33b8522df00daf",
       "sourceName": "contracts/interfaces/IUniswapV2Factory.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -321,23 +332,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">=0.5.0"
+        "^0.8.24"
       ],
       "artifacts": [
         "IUniswapV2Factory"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/interfaces/IUniswapV2Callee.sol": {
-      "lastModificationDate": 1711559319345,
-      "contentHash": "3865557bb36ede841e12edabdc3b34a7",
+      "lastModificationDate": 1712165402996,
+      "contentHash": "8cea8f356194165ce6b305d2e7df3df5",
       "sourceName": "contracts/interfaces/IUniswapV2Callee.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -356,23 +368,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">=0.5.0"
+        "^0.8.24"
       ],
       "artifacts": [
         "IUniswapV2Callee"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/UniswapV2Factory.sol": {
-      "lastModificationDate": 1711561155724,
-      "contentHash": "92059ec92553bc00cd7e3d804ad44adf",
+      "lastModificationDate": 1712166290283,
+      "contentHash": "a1fc2d6bbc042c0dd0d5871981d94090",
       "sourceName": "contracts/UniswapV2Factory.sol",
       "solcConfig": {
-        "version": "0.5.16",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -391,26 +404,28 @@
       },
       "imports": [
         "./interfaces/IUniswapV2Factory.sol",
-        "./UniswapV2Pair.sol"
+        "./UniswapV2Pair.sol",
+        "./interfaces/IUniswapV2Pair.sol"
       ],
       "versionPragmas": [
-        "=0.5.16"
+        "^0.8.24"
       ],
       "artifacts": [
         "UniswapV2Factory"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/libraries/UniswapV2LiquidityMathLibrary.sol": {
-      "lastModificationDate": 1711561490823,
-      "contentHash": "75de3def15439983ab2fab2cb2cf10ab",
+      "lastModificationDate": 1712165476481,
+      "contentHash": "58871df1c49ea8e640320a72320502a3",
       "sourceName": "contracts/libraries/UniswapV2LiquidityMathLibrary.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -436,23 +451,24 @@
         "./UniswapV2Library.sol"
       ],
       "versionPragmas": [
-        ">=0.5.0"
+        "^0.8.24"
       ],
       "artifacts": [
         "UniswapV2LiquidityMathLibrary"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/libraries/FullMath.sol": {
-      "lastModificationDate": 1711560030582,
-      "contentHash": "8be2b2754cca297cd606cd629c2d0184",
+      "lastModificationDate": 1712167122071,
+      "contentHash": "16f4365f45f0dd64f0cd57d96f023ad9",
       "sourceName": "contracts/libraries/FullMath.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -471,23 +487,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">=0.4.0"
+        "^0.8.24"
       ],
       "artifacts": [
         "FullMath"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/libraries/SafeMathNew.sol": {
-      "lastModificationDate": 1711561418424,
-      "contentHash": "3cd246d8f204ac2590aaf9ecf12f520b",
+      "lastModificationDate": 1712165463545,
+      "contentHash": "bf6c095ac0a2e4eea2fd6c5113fc65aa",
       "sourceName": "contracts/libraries/SafeMathNew.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -506,23 +523,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        "=0.6.6"
+        "^0.8.24"
       ],
       "artifacts": [
         "SafeMathNew"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/libraries/UniswapV2Library.sol": {
-      "lastModificationDate": 1712067973461,
-      "contentHash": "20a0522dc68884b9db130d2de9462069",
+      "lastModificationDate": 1712168963853,
+      "contentHash": "c96e471dd1273a56bf9c27e76e48f924",
       "sourceName": "contracts/libraries/UniswapV2Library.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -544,23 +562,24 @@
         "./SafeMathNew.sol"
       ],
       "versionPragmas": [
-        ">=0.5.0"
+        "^0.8.24"
       ],
       "artifacts": [
         "UniswapV2Library"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/libraries/Babylonian.sol": {
-      "lastModificationDate": 1711560028581,
-      "contentHash": "c6e22f3652a5f97f7a22d7c28020bf6a",
+      "lastModificationDate": 1712165438510,
+      "contentHash": "79c266680d56320bf5115633cc834ef0",
       "sourceName": "contracts/libraries/Babylonian.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -579,23 +598,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">=0.4.0"
+        "^0.8.24"
       ],
       "artifacts": [
         "Babylonian"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/libraries/FixedPoint.sol": {
-      "lastModificationDate": 1711560275892,
-      "contentHash": "4cce8dc67221239b6037cb44d4a5db38",
+      "lastModificationDate": 1712166971045,
+      "contentHash": "7f5a620dd0ca3da87a98d37065083647",
       "sourceName": "contracts/libraries/FixedPoint.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -618,23 +638,24 @@
         "./BitMath.sol"
       ],
       "versionPragmas": [
-        ">=0.4.0"
+        "^0.8.24"
       ],
       "artifacts": [
         "FixedPoint"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/libraries/BitMath.sol": {
-      "lastModificationDate": 1711560274057,
-      "contentHash": "2142c047d7aae222373adb3bf6b46f03",
+      "lastModificationDate": 1712166638486,
+      "contentHash": "0d3c3a15aded8c99925759eb0666e1c9",
       "sourceName": "contracts/libraries/BitMath.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -653,23 +674,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">=0.5.0"
+        "^0.8.24"
       ],
       "artifacts": [
         "BitMath"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/libraries/UniswapV2OracleLibrary.sol": {
-      "lastModificationDate": 1711560286557,
-      "contentHash": "2dc49bd04b91e906933f8060ccdfc9e1",
+      "lastModificationDate": 1712165479629,
+      "contentHash": "83496ef367c3b0ecc953b9c955ac3b99",
       "sourceName": "contracts/libraries/UniswapV2OracleLibrary.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -691,23 +713,24 @@
         "./FixedPoint.sol"
       ],
       "versionPragmas": [
-        ">=0.5.0"
+        "^0.8.24"
       ],
       "artifacts": [
         "UniswapV2OracleLibrary"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/UniswapV2Router02.sol": {
-      "lastModificationDate": 1711989061130,
-      "contentHash": "752b48cb587eb20fa23fff85acb525b8",
+      "lastModificationDate": 1712165528061,
+      "contentHash": "d473a07bf2a9adb50178342514a3f2bb",
       "sourceName": "contracts/UniswapV2Router02.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -734,23 +757,24 @@
         "./interfaces/IWETH.sol"
       ],
       "versionPragmas": [
-        "=0.6.6"
+        "^0.8.24"
       ],
       "artifacts": [
         "UniswapV2Router02"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/libraries/TransferHelper.sol": {
-      "lastModificationDate": 1711560494973,
-      "contentHash": "d9a9f3cf900d3e945622c19bc6b2a824",
+      "lastModificationDate": 1712165467344,
+      "contentHash": "428153887a7417c37a0391ad19320c5c",
       "sourceName": "contracts/libraries/TransferHelper.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -769,23 +793,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">=0.6.0"
+        "^0.8.24"
       ],
       "artifacts": [
         "TransferHelper"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/interfaces/IUniswapV2Router02.sol": {
-      "lastModificationDate": 1711560423933,
-      "contentHash": "7e2b83db9b4ec8014b1b849303af41a9",
+      "lastModificationDate": 1712165431036,
+      "contentHash": "a4c93d65807f59fd96dbae02a7de455e",
       "sourceName": "contracts/interfaces/IUniswapV2Router02.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -806,23 +831,24 @@
         "./IUniswapV2Router01.sol"
       ],
       "versionPragmas": [
-        ">=0.6.2"
+        "^0.8.24"
       ],
       "artifacts": [
         "IUniswapV2Router02"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/interfaces/IWETH.sol": {
-      "lastModificationDate": 1711560444237,
-      "contentHash": "44ce7026ece8ae7061ce8bd9c245bb3d",
+      "lastModificationDate": 1712165434173,
+      "contentHash": "8e7729cd2c57a2d00b05753a102d2835",
       "sourceName": "contracts/interfaces/IWETH.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -841,23 +867,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">=0.5.0"
+        "^0.8.24"
       ],
       "artifacts": [
         "IWETH"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/interfaces/IUniswapV2Router01.sol": {
-      "lastModificationDate": 1711560394562,
-      "contentHash": "b935d7c8d4a23145f3853c64fa6474dc",
+      "lastModificationDate": 1712165425900,
+      "contentHash": "cffcb598269a0599532fd6bbd0d32bb9",
       "sourceName": "contracts/interfaces/IUniswapV2Router01.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -876,23 +903,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">=0.6.2"
+        "^0.8.24"
       ],
       "artifacts": [
         "IUniswapV2Router01"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/interfaces/IUniswapV2Migrator.sol": {
-      "lastModificationDate": 1711560336388,
-      "contentHash": "be77a5da4d010a3126c7235b6caab851",
+      "lastModificationDate": 1712165419460,
+      "contentHash": "8a7cc14de5a6c506db79b804604fdfae",
       "sourceName": "contracts/interfaces/IUniswapV2Migrator.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -911,23 +939,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">=0.5.0"
+        "^0.8.24"
       ],
       "artifacts": [
         "IUniswapV2Migrator"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/tokens/ERC20.sol": {
-      "lastModificationDate": 1711648135258,
-      "contentHash": "d0b355af6ae9ca6d292c1444e65cc3af",
+      "lastModificationDate": 1712165504640,
+      "contentHash": "719a8729b22c77ef449f3616d1053d1c",
       "sourceName": "contracts/tokens/ERC20.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -948,23 +977,24 @@
         "./interfaces/IERC20.sol"
       ],
       "versionPragmas": [
-        "=0.6.6"
+        "^0.8.24"
       ],
       "artifacts": [
         "ERC20"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/tokens/interfaces/IERC20.sol": {
-      "lastModificationDate": 1711647888274,
-      "contentHash": "fe3b5b69bfa3534f62c74840b588c32f",
+      "lastModificationDate": 1712165497673,
+      "contentHash": "c3e40bfe93dbb32991fd94ff975d84cf",
       "sourceName": "contracts/tokens/interfaces/IERC20.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -983,23 +1013,24 @@
       },
       "imports": [],
       "versionPragmas": [
-        "=0.6.6"
+        "^0.8.24"
       ],
       "artifacts": [
         "IERC20"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/tokens/StohCoinTwoERC20.sol": {
-      "lastModificationDate": 1711648124226,
-      "contentHash": "e9cca2e9fc8224c6e324e2c6675722b3",
+      "lastModificationDate": 1712165513439,
+      "contentHash": "c625b7213055dd19bc79c76bdb9d9b0a",
       "sourceName": "contracts/tokens/StohCoinTwoERC20.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -1020,23 +1051,24 @@
         "./ERC20.sol"
       ],
       "versionPragmas": [
-        "=0.6.6"
+        "^0.8.24"
       ],
       "artifacts": [
         "StohCoinTwoERC20"
       ]
     },
     "/Users/kovalev/VscProjects/Uniswap-V2-Extended/contracts/tokens/StohCoinOneERC20.sol": {
-      "lastModificationDate": 1711648119307,
-      "contentHash": "ea462880f55267ab902c40f1d6af60b0",
+      "lastModificationDate": 1712165508745,
+      "contentHash": "4f6dc7a61a4131fd94e206ba94a892cf",
       "sourceName": "contracts/tokens/StohCoinOneERC20.sol",
       "solcConfig": {
-        "version": "0.6.6",
+        "version": "0.8.24",
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 999999
           },
+          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -1057,7 +1089,7 @@
         "./ERC20.sol"
       ],
       "versionPragmas": [
-        "=0.6.6"
+        "^0.8.24"
       ],
       "artifacts": [
         "StohCoinOneERC20"

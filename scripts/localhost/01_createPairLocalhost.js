@@ -1,8 +1,8 @@
 const { Contract, ContractFactory, utils, BigNumber, constants } = require('ethers')
 
-UNISWAPV2FACTORY = '0x5FbDB2315678afecb367f032d93F642f64180aa3'
-STOHCOINONEERC20 = '0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9'
-STOHCOINTWOERC20 = '0x5FC8d32690cc91D4c39d9d3abcBD16989F875707'
+UNISWAPV2FACTORY = '0xc3e53F4d16Ae77Db1c982e75a937B9f60FE63690'
+STOHCOINONEERC20 = '0xa82fF9aFd8f496c3d6ac40E2a0F282E47488CFc9'
+STOHCOINTWOERC20 = '0x851356ae760d987E095750cCeb3bC6014560891C'
 
 const artifacts = {
     UniswapV2FactoryArtifact: require('../../artifacts/contracts/UniswapV2Factory.sol/UniswapV2Factory.json'),
