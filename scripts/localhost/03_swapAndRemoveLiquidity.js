@@ -42,52 +42,35 @@ async function main() {
 
     console.log('contracts connected')
 
-    const approval1 = await StohCoinOneERC20Contract.connect(
-        owner
-    ).approve(
-        UNISWAPV2ROUTER02,
-        constants.MaxUint256
-    )
-    approval1.wait()
-
-    const approval2 = await StohCoinTwoERC20Contract.connect(
-        owner
-    ).approve(
-        UNISWAPV2ROUTER02,
-        constants.MaxUint256
-    )
-    approval2.wait()
-
-    const approval3 = await StohCoinOneERC20Contract.connect(
-        owner
-    ).approve(
-        UNISWAPV2PAIR,
-        constants.MaxUint256
-    )
-    approval3.wait()
-
-    const approval4 = await StohCoinTwoERC20Contract.connect(
-        owner
-    ).approve(
-        UNISWAPV2PAIR,
-        constants.MaxUint256
-    )
-    approval4.wait()
-
-    const token0Amount = utils.parseEther('100')
-    const token1Amount = utils.parseEther('100')
+    const token0Amount = utils.parseEther('1')
+    const token1Amount = utils.parseEther('2')
 
     const deadline = Math.floor(Date.now() / 1000 + (10 * 60))
 
     reserves0 = await UniswapV2PairContract.getReserves()
     console.log('reserves before tx = ', reserves0)
 
-    const addLiquidityTx = await UniswapV2Router02Contract.connect(
+    const swapTokensTx = await UniswapV2Router02Contract.connect(
         owner
-    ).addLiquidity(
+    ).swapExactTokensForTokens(
+        token0Amount,
+        0,
+        [STOHCOINONEERC20, STOHCOINTWOERC20],
+        owner.address,
+        deadline,
+        { gasLimit: utils.hexlify(1000000) }
+    )
+    swapTokensTx.wait()
+    console.log('swap complete')
+
+    reserves1 = await UniswapV2PairContract.getReserves()
+    console.log('reserves after tx = ', reserves1)
+
+    const removeLiquidityTx = await UniswapV2Router02Contract.connect(
+        owner
+    ).removeLiquidity(
         STOHCOINONEERC20,
         STOHCOINTWOERC20,
-        token0Amount,
         token1Amount,
         0,
         0,
@@ -95,15 +78,17 @@ async function main() {
         deadline,
         { gasLimit: utils.hexlify(1000000) }
     )
-    addLiquidityTx.wait()
-    console.log('liquidity add complete')
+    removeLiquidityTx.wait()
+    console.log('removeLiquidityTx complete')
 
-    reserves1 = await UniswapV2PairContract.getReserves()
-    console.log('reserves after tx = ', reserves1)
+    reserves2 = await UniswapV2PairContract.getReserves()
+    console.log('reserves after tx2 = ', reserves2)
+
+
 }
 
 // Run the script
-// npx hardhat run --network localhost scripts/localhost/02_addLiquidityLocalhost.js
+// npx hardhat run --network localhost scripts/localhost/03_swapAndRemoveLiquidity.js
 
 main()
     .then(() => process.exit(0))
